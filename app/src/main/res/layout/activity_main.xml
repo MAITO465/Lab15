@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#121212"> <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Saisir le nom de famille :"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="#E0E0E0" /> <EditText
+    android:id="@+id/input_nom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#4CAF50" /> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Saisir le prénom :"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="#E0E0E0" />
+
+    <EditText
+        android:id="@+id/input_prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/action_ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer l'étudiant"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF" /> <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#333333"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rechercher / Supprimer (par ID) :"
+        android:textStyle="bold"
+        android:textColor="#E0E0E0" />
+
+    <EditText
+        android:id="@+id/input_id_etudiant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3" /> <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/action_chercher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Localiser"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="5dp"/> <Button
+        android:id="@+id/action_supprimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Effacer"
+        android:backgroundTint="#E53935"
+        android:textColor="#FFFFFF"
+        android:layout_marginStart="5dp"/> </LinearLayout>
+
+    <TextView
+        android:id="@+id/affichage_resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#00E676"
+        android:gravity="center" /> </LinearLayout>
